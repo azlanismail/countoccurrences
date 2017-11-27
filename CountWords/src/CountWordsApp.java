@@ -55,14 +55,15 @@ public class CountWordsApp {
 		           (wordMap.get(word) == null ? 1 : (wordMap.get(word) + 1)));
 		    }
 		}
+		
 	    //display the result
 		System.out.println("The results :");
 		for (String name: wordMap.keySet()){
-             String key =name.toString();
-             String value = wordMap.get(name).toString();  
-             System.out.println(key + " = " + value);  
-       } 
-	//	System.out.println(wordMap);		
-	}
+			String key =name.toString();
+			String value = wordMap.get(name).toString();  
+			System.out.println(key + " = " + value);  
+		} 
+	
+	}//end of main program
 	
 }
