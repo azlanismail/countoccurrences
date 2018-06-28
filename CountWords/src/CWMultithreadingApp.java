@@ -61,7 +61,7 @@ public class CWMultithreadingApp extends Thread{
       		//String inputfile = "C:\\Users\\AkashiLegacy\\workspace\\Parallel Project\\parallelWord\\inputfile.txt";
       	
       	    //set the path for input file
-    		String inputfile = "inputfile100.txt";
+    		String inputfile = "inputfile1000.txt";
       		
       	//prepare the lists
           ArrayList<String> inline = new ArrayList<String>();
@@ -110,7 +110,7 @@ public class CWMultithreadingApp extends Thread{
      		
      		
            //looping
-     		CWMultithreadingApp [] th = new CWMultithreadingApp[2];
+     		CWMultithreadingApp [] th = new CWMultithreadingApp[8];
             long startTime = System.currentTimeMillis();
             
             for(int i=0; i < th.length; i++)  {
