@@ -25,7 +25,7 @@ public class MultiThreadWordCount extends Thread{
     
     public static void main(String [] args) {
     	long startTime = System.nanoTime();
-        String fileName = "C:/sample/500.txt";
+        String fileName = "inputfile10000.txt";
         ArrayList<String> strings = new ArrayList<String>();
         readFile(fileName,strings);
         String listString = listToString(strings);

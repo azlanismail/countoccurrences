@@ -12,7 +12,7 @@ public class CountWordsApp {
 		// TODO Auto-generated method stub
 
 		//set the path for input file
-		String inputfile = "inputfile10.txt";
+		String inputfile = "inputfile10000.txt";
 	
 		//prepare the lists
 		ArrayList<String> inline = new ArrayList<String>();

@@ -1,4 +1,4 @@
-package wordCount;
+
 
 import mpi.Datatype;
 import mpi.MPI;
@@ -16,7 +16,7 @@ public class MPIWordCount {
 //        int size = MPI.COMM_WORLD.Size();    
         
         //set the file size
-        String fileName = "C:/sample/test.txt";
+        String fileName = "inputfile10000.txt";
         
         
         ArrayList<String> strings = new ArrayList<String>();
@@ -77,10 +77,12 @@ public class MPIWordCount {
     	
     	Map<String, Integer> globalWordCount = new HashMap<>();
     	int cnt = 0;
+    	String[] s1 = null;
+    	int[] s2 = null;
         for (String words : a1.keySet()) {
             int count = a1.get(words);
-            String[] s1 = new String[a1.size()];
-           	int[] s2 = new int[a1.size()];
+            s1 = new String[a1.size()];
+           	s2 = new int[a1.size()];
             s1[cnt]=words;
             s2[cnt]=count;
             if(globalWordCount.containsKey(words)) {
